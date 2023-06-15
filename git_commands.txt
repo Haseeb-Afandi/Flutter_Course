@@ -2,3 +2,6 @@ git config --global user.name <username>
 git config --global user.email <useremail>
 
 git init
+git add ./git add <filename>
+git remote add origin <link of repo>
+git commit -m "message" (-m stands for message)
