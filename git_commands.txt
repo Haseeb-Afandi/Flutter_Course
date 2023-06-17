@@ -5,3 +5,27 @@ git init
 git add ./git add <filename>
 git remote add origin <link of repo>
 git commit -m "message" (-m stands for message)
+
+
+Steps for creating GitHub account 
+
+1 - download git SCM download and Install it on systems
+
+2- go to github.com and signup with Gmail if you don't have an account
+
+3-  open cmd run command git config --global user.name "your username" 
+--global user.email "your email" 
+
+4 - open vs code create folder add two files
+
+5 - open GitHub.com create a repository add name etc 
+
+6 - open vs code open vs code terminal run commands
+- git init  for initialize project 
+- git status for check status
+- git add . for add all untracked files
+- git add filename for add one specific file
+- git commit -m "your message" for add specific comment about work you done
+- git remote add origin your repo link for adding your work to remote repo
+
+-  git push -u origin master for push yo…
