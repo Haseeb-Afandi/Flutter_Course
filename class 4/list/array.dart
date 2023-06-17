@@ -24,4 +24,23 @@ void main(){
 
     print(flowers);
 
+    flowers.sort();
+
+    print(flowers);
+
+    List abc = [1,2,2,3,4];
+
+    print(abc.isEmpty);
+
+    abc.clear();
+
+    print(!abc.isNotEmpty);
+
+    abc.removeWhere((element) => element < 2);
+
+    print(abc);
+
+    flowers.removeWhere((element) => element == "Gulab");
+
+    print(flowers);
 }
