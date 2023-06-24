@@ -1,16 +1,20 @@
 void main(){
 
-  List<int> numvers = [1,2,2,4,5,6,7];
-  List result = [];
+    List<int> numbers = [22,21,34,84,11];
 
-  for (var numbers in numvers) {
-    if ((numbers% 2) == 0) {
-      result.add(true);
-    } else {
-      result.add(false);
+  var greatest = numbers[0];
+  var smallest = numbers[0];
+
+  numbers.forEach((element) {
+    
+    if(element > greatest){
+      greatest = element;
     }
-  }
+    else if(element < smallest){
+      smallest = element;
+    }
+  });
 
-  print(numvers);
-  print(result);
+  print(greatest);
+  print(smallest);
 }

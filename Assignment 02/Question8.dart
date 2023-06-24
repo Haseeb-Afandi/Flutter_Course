@@ -1,27 +1,14 @@
 void main() {
-  List days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednessday",
-    "Thursday",
-    "Friday",
-    "Saturday"
+
+  List<Map> usersEligibility = [
+    {'name': 'John', 'eligible': true},
+    {'name': 'Alice', 'eligible': false},
+    {'name': 'Mike', 'eligible': true},
+    {'name': 'Sarah', 'eligible': true},
+    {'name': 'Tom', 'eligible': false},
   ];
 
-  days.removeLast();
-  print(days);
-  days.removeLast();
-  days.removeLast();
+  usersEligibility.removeWhere((element) => element['eligible'] == false);
 
-
-  print(days);
-
-
-  days.forEach((element) {
-    if(element[0] == "S"){
-      print(element);
-    }
-  });
-
+  print(usersEligibility);
 }

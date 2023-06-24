@@ -1,15 +1,13 @@
+import 'dart:math';
+
 void main() {
 
-  List<int> numbers = [22,33,44,55];
+Map<String, double> expenses = {
+  'sun': 3000.0,
+  'mon': 3000.0,
+  'tue': 3234.0,
+};
+ expenses.putIfAbsent('fri', () => 5000.0);
 
-  numbers.removeWhere((element) => element%2 == 0);
-
-  int x = 0;
-  while(x<numbers.length){
-    numbers[x] = numbers[x]+1;
-
-    x++;
-  }
-  
-  print(numbers);
+ print(expenses);
 }
