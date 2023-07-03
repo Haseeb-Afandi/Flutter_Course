@@ -1,17 +1,15 @@
 // QUESTION
 
-// Write a program to make a pyramid pattern with numbers increased by 1.
-
-// 1
-// 2 3
-// 4 5 6
-// 7 8 9 10
+// Write a program to make such a pattern as a pyramid with an asterisk.
+//  *
+//  * *
+//  * * *
+// * * * *
 
 // SOLUTION
 
 void main(){
 
-  int num = 0;
   String Output = '';
 
   for(int x = 0; x < 4; x++){
@@ -19,12 +17,12 @@ void main(){
       Output = Output+' ';
     }
     for(int y = 0; y<=x; y++){
-      num++;
 
-      Output = Output+'$num ';
+      Output = Output+'* ';
     }
     print(Output);
 
     Output = '';
   }
+
 }
