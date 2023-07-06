@@ -5,25 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "testbed",
-            "cwd": "testbed",
+            "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
             "console": "terminal"
-        },
-        {
-            "name": "testbed (profile mode)",
-            "cwd": "testbed",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "testbed (release mode)",
-            "cwd": "testbed",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
         }
     ]
 }
