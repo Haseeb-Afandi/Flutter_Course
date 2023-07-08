@@ -8,6 +8,7 @@ void main(){
     print("Current semester is : $semester");
     if(semester == 4){
       graduation = true;
+      print("You have graduated!!");
     }
     semester++;
   }
