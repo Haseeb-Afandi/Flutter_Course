@@ -1,9 +1,9 @@
 void main(){
 
-  String StudentName = "Haseeb";
+  String? StudentName = null;
 
   print(calc_marks(
-    name: StudentName
+    name: StudentName ?? name()
   ));
 }
 
@@ -13,3 +13,6 @@ String calc_marks({required name})
 
     return marks;
   }
+String name() => "Haseeb";
+
+// void main() => print("hello");
